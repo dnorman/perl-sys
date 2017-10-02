@@ -8,3 +8,4 @@ env:
   - PERL5LIB=~/perl5
 before_install:
   - cpanm --local-lib=~/perl5 --quiet --installdeps --notest .
+  - ls -lR /home/travis/perl5
