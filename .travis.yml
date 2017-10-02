@@ -4,3 +4,5 @@ rust:
   - stable
   - beta
   - nightly
+before_install:
+  - cpanm --quiet --installdeps --notest .
