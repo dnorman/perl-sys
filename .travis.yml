@@ -5,7 +5,6 @@ rust:
   - beta
   - nightly
 env:
-  - PERL5LIB=~/perl5
+  - PERL5LIB=~/perl5/lib/perl5
 before_install:
-  - cpanm --local-lib=~/lib/perl5 --quiet --installdeps --notest .
-  - ls -lR ~/
+  - cpanm --local-lib=~/perl5 --quiet --installdeps --notest .
