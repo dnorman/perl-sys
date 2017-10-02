@@ -5,4 +5,4 @@ rust:
   - beta
   - nightly
 before_install:
-  - cpanm --quiet --installdeps --notest .
+  - sudo cpanm --quiet --installdeps --notest .
