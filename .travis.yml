@@ -4,5 +4,7 @@ rust:
   - stable
   - beta
   - nightly
+env:
+  - PERL5LIB=~/perl5
 before_install:
-  - sudo cpanm --quiet --installdeps --notest .
+  - cpanm --local-lib=~/perl5 --quiet --installdeps --notest .
